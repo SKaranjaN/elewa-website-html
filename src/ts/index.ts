@@ -39,7 +39,6 @@ const projectThree: ProjectItem = {
   imgSrc: "/src/images/Healthcare.jpg"
 };
 console.log(projectThree)
-
 // project four
 const projectFour: ProjectItem = {
   title: "Introducing conversational learning",
