@@ -53,6 +53,24 @@ imageTwo.innerHTML = "<img src=".concat(projectTwo.imgSrc, " />");
 h3Two.innerText = (projectTwo.title);
 tagTwo.innerHTML = "<p>".concat(projectTwo.tag, "</p>");
 descriptionTwo.innerText = (projectTwo.description);
+// project three
+var imageThree = document.getElementById("project-three");
+var h3Three = document.getElementById("h3-text-three");
+var tagThree = document.getElementById("tag-three");
+var descriptionThree = document.getElementById("description-three");
+imageThree.innerHTML = "<img src=".concat(projectThree.imgSrc, " />");
+h3Three.innerText = (projectThree.title);
+tagThree.innerHTML = "<p>".concat(projectThree.tag, "</p>");
+descriptionThree.innerText = (projectThree.description);
+// project four
+var imageFour = document.getElementById("project-four");
+var h3Four = document.getElementById("h3-text-four");
+var tagFour = document.getElementById("tag-four");
+var descriptionFour = document.getElementById("description-four");
+imageFour.innerHTML = "<img src=".concat(projectFour.imgSrc, " />");
+h3Four.innerText = (projectFour.title);
+tagFour.innerHTML = "<p>".concat(projectFour.tag, "</p>");
+descriptionFour.innerText = (projectFour.description);
 // function that allows the carousel to respond
 var leftBtn = document.getElementById("left"); // targeting the buttons
 var rightBtn = document.getElementById("right");
@@ -67,7 +85,7 @@ rightBtn === null || rightBtn === void 0 ? void 0 : rightBtn.addEventListener("c
     projectsContainer.style.transition = "transform 0.5s";
     projectsContainer.style.transform = "translateX(200px)";
 });
-var arr = ["1", "2", "3"];
-for (var i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-}
+// const arr = ["1", "2", "3"];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i])
+// }

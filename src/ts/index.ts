@@ -73,6 +73,27 @@ h3Two.innerText = (projectTwo.title);
 tagTwo.innerHTML = `<p>${projectTwo.tag}</p>`;
 descriptionTwo.innerText = (projectTwo.description);
 
+// project three
+const imageThree = document.getElementById("project-three")
+const h3Three = document.getElementById("h3-text-three");
+const tagThree = document.getElementById("tag-three");
+const descriptionThree = document.getElementById("description-three")
+
+imageThree.innerHTML = `<img src=${projectThree.imgSrc} />`;
+h3Three.innerText = (projectThree.title);
+tagThree.innerHTML = `<p>${projectThree.tag}</p>`;
+descriptionThree.innerText = (projectThree.description);
+
+// project four
+const imageFour = document.getElementById("project-four")
+const h3Four = document.getElementById("h3-text-four");
+const tagFour = document.getElementById("tag-four");
+const descriptionFour = document.getElementById("description-four")
+
+imageFour.innerHTML = `<img src=${projectFour.imgSrc} />`;
+h3Four.innerText = (projectFour.title);
+tagFour.innerHTML = `<p>${projectFour.tag}</p>`;
+descriptionFour.innerText = (projectFour.description);
 // function that allows the carousel to respond
 const leftBtn = document.getElementById("left"); // targeting the buttons
 const rightBtn = document.getElementById("right");
@@ -90,7 +111,7 @@ rightBtn?.addEventListener("click", function handleClick (event) {
   projectsContainer.style.transform = "translateX(200px)";
 });
 
-const arr = ["1", "2", "3"];
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i])
-}
+// const arr = ["1", "2", "3"];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i])
+// }
