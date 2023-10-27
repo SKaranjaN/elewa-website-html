@@ -94,6 +94,7 @@ imageFour.innerHTML = `<img src=${projectFour.imgSrc} />`;
 h3Four.innerText = (projectFour.title);
 tagFour.innerHTML = `<p>${projectFour.tag}</p>`;
 descriptionFour.innerText = (projectFour.description);
+
 // function that allows the carousel to respond
 const leftBtn = document.getElementById("left"); // targeting the buttons
 const rightBtn = document.getElementById("right");
