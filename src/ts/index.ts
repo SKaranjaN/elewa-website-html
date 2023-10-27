@@ -49,6 +49,30 @@ const projectFour: ProjectItem = {
 };
 console.log(projectFour)
 
+// linking the data interface to the html
+// project one
+const imageOne = document.getElementById("project-one")
+const h3One = document.getElementById("h3-text-one");
+const tagOne = document.getElementById("tag-one");
+const description = document.getElementById("description")
+
+imageOne.innerHTML = `<img src=${projectOne.imgSrc} />`;
+h3One.innerText = (projectOne.title);
+tagOne.innerHTML = `<p>${projectOne.tag}</p>`;
+description.innerText = (projectOne.description);
+console.log(description)
+
+// project two
+const imageTwo = document.getElementById("project-two")
+const h3Two = document.getElementById("h3-text-two");
+const tagTwo = document.getElementById("tag-two");
+const descriptionTwo = document.getElementById("description-two")
+
+imageTwo.innerHTML = `<img src=${projectTwo.imgSrc} />`;
+h3Two.innerText = (projectTwo.title);
+tagTwo.innerHTML = `<p>${projectTwo.tag}</p>`;
+descriptionTwo.innerText = (projectTwo.description);
+
 // function that allows the carousel to respond
 const leftBtn = document.getElementById("left"); // targeting the buttons
 const rightBtn = document.getElementById("right");
@@ -65,3 +89,8 @@ rightBtn?.addEventListener("click", function handleClick (event) {
   projectsContainer.style.transition = "transform 0.5s";
   projectsContainer.style.transform = "translateX(200px)";
 });
+
+const arr = ["1", "2", "3"];
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i])
+}

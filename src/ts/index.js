@@ -33,6 +33,26 @@ var projectFour = {
     imgSrc: "/src/images/Learning.jpg"
 };
 console.log(projectFour);
+// linking the data interface to the html
+// project one
+var imageOne = document.getElementById("project-one");
+var h3One = document.getElementById("h3-text-one");
+var tagOne = document.getElementById("tag-one");
+var description = document.getElementById("description");
+imageOne.innerHTML = "<img src=".concat(projectOne.imgSrc, " />");
+h3One.innerText = (projectOne.title);
+tagOne.innerHTML = "<p>".concat(projectOne.tag, "</p>");
+description.innerText = (projectOne.description);
+console.log(description);
+// project two
+var imageTwo = document.getElementById("project-two");
+var h3Two = document.getElementById("h3-text-two");
+var tagTwo = document.getElementById("tag-two");
+var descriptionTwo = document.getElementById("description-two");
+imageTwo.innerHTML = "<img src=".concat(projectTwo.imgSrc, " />");
+h3Two.innerText = (projectTwo.title);
+tagTwo.innerHTML = "<p>".concat(projectTwo.tag, "</p>");
+descriptionTwo.innerText = (projectTwo.description);
 // function that allows the carousel to respond
 var leftBtn = document.getElementById("left"); // targeting the buttons
 var rightBtn = document.getElementById("right");
@@ -47,3 +67,7 @@ rightBtn === null || rightBtn === void 0 ? void 0 : rightBtn.addEventListener("c
     projectsContainer.style.transition = "transform 0.5s";
     projectsContainer.style.transform = "translateX(200px)";
 });
+var arr = ["1", "2", "3"];
+for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
